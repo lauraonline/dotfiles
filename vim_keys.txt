@@ -1,0 +1,63 @@
+sample text:
+#include <iostream>
+
+using namespace std;
+
+main() {
+    cout<<"Hello world!"<<endl;
+}
+
+KEYS:
+⚠️ = Mapped manually in config
+ENTER NORMAL MODE:
+    ESC or C-[      | Enter normal mode
+ENTER INSERT MODE:
+    i               | I at cursor
+    a               | I to append (after cursor)
+    A               | I at end of line
+    S               | Clear current line, then I
+    o               | New line under cursor, then I inside it
+    O               | New line above cursor, then I inside it
+IN NORMAL MODE:
+    MOVEMENT
+            k           | Up
+        h       l       | Left/right
+            j           | Down
+        b               | Go to previous word
+        B               | Go to previous WORD
+        w               | Go to next word
+        W               | Go to next WORD
+        $               | Go to end of line
+    COPY/PASTE/MANIPULATE
+        u               | Undo
+        C-r             | Redo
+        d               | Cut
+        y               | Yank (copy)
+        p               | Paste (if it's a line, paste under cursor)
+        x               | Delete at cursor
+        dd/Delete       | Delete current line
+        Leader-O       ⚠️| New line under cursor
+    OTHERS
+        gt              | Switch to next tab
+        q[name]         | Start recording macro in register [name]
+        q               | Stop recording macro
+        [count]@[name]  | Play macro from register [name] [count] times.
+                          If [count] isn't provided, play macro once.
+    
+COMMANDS:
+    :w                      | Write
+    :q                      | Quit
+    :x                      | Write and quit
+    :tabnew [file]          | Open file in new tab
+    :tabc                   | Close current tab
+    :tabn N                 | Go to tab number N.
+                              Use $ to go to last tab
+    :[range]tabd command    | Executes command in each tab included in [range]
+                              [range] example: 3,5 (3 to 5), 2,3+3 (2 to 6),
+                                               4,$ (4 to last), 5,$-1 (5 to penultimate)
+    :r [file]               | Append file under current line
+    :! command              | Run command in integrated terminal
+    :enew                   | New empty buffer
+    :e file.txt             | Open file in new buffer
+    :bn/:bp                 | Next buffer/previous buffer
+    :bd                     | Delete current buffer
