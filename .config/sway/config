@@ -210,23 +210,32 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
     bindsym Print exec grim
-
+    # Clipboard history
+    bindsym $mod-v exec cliphist list | rofi --dmenu | cliphist decode | wl-copy
+    # Print region to clipboard
+    bindsym $mod-Print exec grim -g "$(slurp)" - | wl-copy
+    # Print screen to clipboard
+    bindsym Print exec grim - | wl-copy
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
+# bar {
+#     position top
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+# 
+#     colors {
+#         statusline #ffffff
+#         background #323232
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
-
+# replace swaybar with waybar
+exec waybar
+# mako noti daemon
+exec mako
 include /etc/sway/config.d/*
