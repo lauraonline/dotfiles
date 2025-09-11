@@ -18,6 +18,15 @@ ENTER INSERT MODE:
     S               | Clear current line, then I
     o               | New line under cursor, then I inside it
     O               | New line above cursor, then I inside it
+ENTER VISUAL MODE:
+    v               | Enter visual mode
+    V               | Enter visual-line mode
+    C-v             | Enter visual-block mode 
+IN VISUAL MODE:
+    a+b             | Select the current () code-block
+    a+B             | Select the current {} code-block
+    i+b             | Select everything inside the current () code block
+    i+B             | Select everything inside the current {} code block
 IN NORMAL MODE:
     MOVEMENT
             k           | Up
