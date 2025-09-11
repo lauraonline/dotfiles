@@ -1,0 +1,21 @@
+MOVEMENT
+        k               | Up
+    h       l           | Left/right
+        j               | Down
+    Super+[dir]         | Focus in the direction [dir]
+    Super+Shift+[dir]   | Move current window in direction [dir]
+    Super+Shift+[num]   | Move current window to workspace [num]
+    Super+[num]         | Switch to workspace [num]
+ACTIONS
+    Super+<cr>          | Open terminal in focused direction
+    Super+d             | Open app launcher
+    Super+Q             | Kill focused window
+    Super+C             | Reload sway config
+    Super+E             | Log out
+LAYOUT
+    Super+b             | Change focused direction to horizontal
+    Super+v             | Change focused direction to vertical
+RESIZE MODE
+    Super+r             | Enter resize mode
+    [dir]               | Resize focused window in direction [dir]
+    Esc/<cr>            | Exit resize mode
