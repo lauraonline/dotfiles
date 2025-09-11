@@ -41,8 +41,11 @@ IN NORMAL MODE:
         u               | Undo
         C-r             | Redo
         d               | Cut
-        y               | Yank (copy)
+        y               | Yank selected text (copy)
+        yy              | Yank current line
         p               | Paste (if it's a line, paste under cursor)
+        "+y             | Yank to clipboard
+        "+p             | Paste from clipboard
         x               | Delete at cursor
         dd/Delete       | Delete current line
         Leader-O       ⚠️| New line under cursor
