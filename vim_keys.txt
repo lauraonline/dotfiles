@@ -14,6 +14,7 @@ ENTER NORMAL MODE:
 ENTER INSERT MODE:
     i               | I at cursor
     a               | I to append (after cursor)
+    ea              | I after current word
     A               | I at end of line
     S               | Clear current line, then I
     o               | New line under cursor, then I inside it
@@ -27,16 +28,27 @@ IN VISUAL MODE:
     a+B             | Select the current {} code-block
     i+b             | Select everything inside the current () code block
     i+B             | Select everything inside the current {} code block
+    > or <          | Increase or decrease indentation in selected text               
 IN NORMAL MODE:
     MOVEMENT
             k           | Up
         h       l       | Left/right
             j           | Down
-        b               | Go to previous word
-        B               | Go to previous WORD
-        w               | Go to next word
-        W               | Go to next WORD
+        b               | Go to previous start-of-word
+        B               | Go to previous start-of-WORD
+        w               | Go to next start-of-word
+        W               | Go to next start-of-WORD
+        e               | Go to next end-of-word
+        E               | Go to next end-of-WORD
+        0               | Go to start of line
         $               | Go to end of line
+        f[c]            | Find character [c] in current line
+        C-y             | Scroll screen up
+        C-e             | Scroll screen down
+        C-u             | Scroll screen up by 1/2 screen
+        C-d             | Scroll screen down by 1/2 screen
+        {               | Go to next paragraph
+        }               | Go to previous paragraph
     COPY/PASTE/MANIPULATE
         u               | Undo
         C-r             | Redo
@@ -49,13 +61,25 @@ IN NORMAL MODE:
         x               | Delete at cursor
         dd/Delete       | Delete current line
         Leader-O       ⚠️| New line under cursor
+    SHORTCUTS
+        yiw             | Yank word under cursor
+        yaw             | Yank word under cursor naturally (including adjacent space)
+        dw              | Cut from cursor to next start-of-word
+        diw             | Cut word under cursor
+        daw             | Cut word under cursor naturally (including adjacent space)
     OTHERS
+        ZZ              | Write and quit
         gt              | Switch to next tab
         q[name]         | Start recording macro in register [name]
         q               | Stop recording macro
         [count]@[name]  | Play macro from register [name] [count] times.
                           If [count] isn't provided, play macro once.
-    
+IN INSERT MODE:
+    C-o                     | Switch to normal mode for 1 key/combo/command,
+                              and after that, switch to insert mode
+    C-t                     | Indent current line
+    C-d                     | De-indent current line
+    C-r, +                  | Paste from clipboard
 COMMANDS:
     :w                      | Write
     :q                      | Quit
