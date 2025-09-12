@@ -14,15 +14,10 @@ export HISTIGNORE="&[bf]g:clear:history:exit:q:pwd:* --help"
 # new shells retain history from old shells
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/laura-alves/.zshrc'

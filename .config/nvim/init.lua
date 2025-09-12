@@ -11,6 +11,10 @@ set.tabstop = 4             -- 4 spaces tab
 set.shiftwidth = 4          -- 4 spaces indentation
 set.expandtab = true        -- use spaces when tabbing
 
+-- statuscolumn
+set.relativenumber = true
+set.statuscolumn = "%l %s %r "
+
 -- keymap
 map('i', '{<cr>', '{<cr>}<esc>kA<cr><Tab>', {
     noremap = true,
