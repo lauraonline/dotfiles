@@ -68,7 +68,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
@@ -208,12 +208,10 @@ bindsym $mod+r mode "resize"
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-    # Special key to take a screenshot with grim
-    bindsym Print exec grim
     # Clipboard history
-    bindsym $mod-v exec cliphist list | rofi --dmenu | cliphist decode | wl-copy
+    bindsym $mod+Shift+v exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
     # Print region to clipboard
-    bindsym $mod-Print exec grim -g "$(slurp)" - | wl-copy
+    bindsym $mod+Print exec grim -g "$(slurp)" - | wl-copy
     # Print screen to clipboard
     bindsym Print exec grim - | wl-copy
 #
@@ -233,7 +231,9 @@ bindsym $mod+r mode "resize"
 #         inactive_workspace #32323200 #32323200 #5c5c5c
 #     }
 # }
-
+#autorun:
+# listen for clipboard changes
+exec wl-paste --watch cliphist store
 # replace swaybar with waybar
 exec waybar
 # mako noti daemon
