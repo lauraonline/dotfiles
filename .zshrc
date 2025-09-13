@@ -38,3 +38,6 @@ prompt pure
 # making the prompt one-line (turns the newline variable into the 1001th element of psvar, the metrics array for the prompt, and prepends the $PROMPT with a whitespace). if your prompt looks off, this is probably why.
 prompt_newline=$(echo -n '%1001v')
 PROMPT=" $PROMPT"
+# setting delete key to delete-char function, and c-delete to kill-word
+bindkey '\e[3~' delete-char
+bindkey '\e[3;5~' kill-word
