@@ -9,6 +9,8 @@ dotfiles=(
 
     ".config/mako/config"
 
+    ".config/foot/foot.ini"
+
     ".config/waybar/config"
     ".config/waybar/style.css"
 
