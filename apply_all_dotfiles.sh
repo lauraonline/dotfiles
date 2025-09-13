@@ -1,35 +1,8 @@
-#!/bin/bash
-dotfiles_path="$HOME/dotfiles"
-backup_path="$HOME/og_dotfiles"
-
-dotfiles=(
-    ".config/sway/config"
-    ".config/nvim/init.lua"
-    ".config/mako/config"
-    ".zshrc"
-    ".local/bin/pi"
-)
-echo "creating backup for existing dotfiles at $backup_path"
-mkdir -p "$backup_path"
-
-for file in "${dotfiles[@]}"; do
-    source_path="$dotfiles_path/$file"
-    destination_path="$HOME/$file"
-    # create folder for the dotifle to go into
-    mkdir -p "$(dirname "$destination_path")"
-    # if the file already exists, check if it's not already a link to the dotfiles
-    if [ -e "$destination_path" ]; then
-        if [ -L "$destination_path" ] && [ "$(readlink "$destination_path")" = "$source_path" ]; then
-            echo "$destination_path is already symlinked"
-        else
-            mv "$destination_path" "$backup_path/"
-            echo "$destination_path backed up to $backup_path/"
-            ln -s "$source_path" "$destination_path"
-            echo "$destination_path is now symlinked"
-        fi
-    else
-        ln -s "$source_path" "$destination_path"
-        echo "$destination_path is now symlinked"
-    fi
-done
-echo "Dotfiles installed!"
+# sway config
+ln -s ./.config/sway/config ~/.config/sway/config
+# nvim config
+ln -s ./.config/nvim/init.lua ~/.config/nvim/init.lua
+# zsh config
+ln -s ./.zshrc ~/.zshrc
+# pi (paste image) takes an image from your clipboard and saves it in ~/Screenshots/
+ln -s ./.local/bin/pi ~/.local/bin/pi

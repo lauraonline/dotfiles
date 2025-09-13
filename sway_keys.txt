@@ -9,7 +9,6 @@ MOVEMENT
 ACTIONS
     Super+<cr>          | Open terminal in focused direction
     Super+d             | Open app launcher
-    Super+f             | Toggle fullscreen focused window
     Super+q             | Kill focused window
     Super+C             | Reload sway config
     Super+E             | Log out
