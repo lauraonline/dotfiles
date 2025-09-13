@@ -31,3 +31,7 @@ alias vim="nvim"
 alias vi="nvim"
 # custom home/.local/bin path
 export PATH=$HOME/.local/bin:$PATH
+# pure theme
+fpath+=("$HOME/dotfiles/zsh/plugins/pure")
+autoload -U promptinit; promptinit
+prompt pure
