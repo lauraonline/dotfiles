@@ -4,9 +4,16 @@ backup_path="$HOME/og_dotfiles"
 
 dotfiles=(
     ".config/sway/config"
+
     ".config/nvim/init.lua"
+
     ".config/mako/config"
+
+    ".config/waybar/config"
+    ".config/waybar/style.css"
+
     ".zshrc"
+
     ".local/bin/pi"
 )
 echo "creating backup for existing dotfiles at $backup_path"
