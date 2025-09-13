@@ -1,12 +1,13 @@
 -- VIM to LUA command: vim.cmd([COMMAND GOES HERE])
--- lazy
-require("config.lazy")
 -- useful aliases
 local map = vim.keymap.set
 local set = vim.opt
 
 vim.g.mapleader = ' '       -- use SPACEBAR as leader
 set.number = true           -- show line numbers
+
+-- lazy
+require("config.lazy")
 
 set.tabstop = 4             -- 4 spaces tab
 set.shiftwidth = 4          -- 4 spaces indentation
