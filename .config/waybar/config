@@ -63,7 +63,9 @@
         "format-icons": {
             "activated": "",
             "deactivated": ""
-        }
+        },
+        "tooltip-format-activated": "idle inhibitor {status}",
+        "tooltip-format-deactivated": "idle inhibitor {status}"
     },
     "tray": {
         // "icon-size": 21,
