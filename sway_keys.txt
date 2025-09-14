@@ -16,6 +16,14 @@ ACTIONS
 LAYOUT
     Super+b             | Change focused direction to horizontal
     Super+v             | Change focused direction to vertical
+    Super+s             | Switch window to stacking mode
+    Super+w             | Switch window to tabs mode
+    Super+e             | Switch window to normal mode
+    Super+Shift+Space   | Toggle floating mode
+    Super+Space         | Swap focus btwn floating and normal
+BAG OF HOLDING
+    Super+Shift+Minus   | Send window to bag of holding
+    Super+Minus         | Retrieve window from bag of holding
 RESIZE MODE
     Super+r             | Enter resize mode
     [dir]               | Resize focused window in direction [dir]
