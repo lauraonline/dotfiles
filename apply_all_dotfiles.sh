@@ -20,6 +20,8 @@ dotfiles=(
     ".zshrc"
 
     ".local/bin/pi"
+
+    ".local/share/wayland-sessions/sway.desktop"
 )
 echo "creating backup for existing dotfiles at $backup_path"
 mkdir -p "$backup_path"
