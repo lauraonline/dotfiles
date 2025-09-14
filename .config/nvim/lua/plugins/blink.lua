@@ -48,8 +48,6 @@ return {
     --
     -- See the fuzzy documentation for more information
     fuzzy = { implementation = "prefer_rust_with_warning" },
-    -- disable auto brackets
-    accept = { auto_brackets = { enabled = false }, },
   },
   opts_extend = { "sources.default" }
 }
