@@ -9,6 +9,7 @@ dotfiles=(
     ".config/nvim/lua/config/lazy.lua"
     ".config/nvim/lua/plugins/blink.lua"
     ".config/nvim/lua/plugins/nvim_highlight_colors.lua"
+    ".config/nvim/lua/plugins/treesitter.lua"
 
     ".config/fontconfig/fonts.conf"
 
