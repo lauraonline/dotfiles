@@ -22,6 +22,8 @@ dotfiles=(
     ".local/bin/pi"
 
     ".local/share/wayland-sessions/sway.desktop"
+
+    ".config/fontconfig/fonts.conf"
 )
 echo "creating backup for existing dotfiles at $backup_path"
 mkdir -p "$backup_path"
