@@ -10,6 +10,10 @@ dotfiles=(
     ".config/nvim/lua/plugins/blink.lua"
     ".config/nvim/lua/plugins/nvim_highlight_colors.lua"
 
+    ".config/fontconfig/fonts.conf"
+
+    ".config/lf/lfrc"
+
     ".config/mako/config"
 
     ".config/foot/foot.ini"
@@ -23,7 +27,6 @@ dotfiles=(
 
     ".local/share/wayland-sessions/sway.desktop"
 
-    ".config/fontconfig/fonts.conf"
 )
 echo "creating backup for existing dotfiles at $backup_path"
 mkdir -p "$backup_path"
