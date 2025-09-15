@@ -11,6 +11,7 @@ dotfiles=(
     ".config/nvim/lua/plugins/nvim_highlight_colors.lua"
 
     ".config/fontconfig/fonts.conf"
+    ".local/share/fonts/MapleMono"
 
     ".config/lf/lfrc"
 
