@@ -18,10 +18,10 @@ set.relativenumber = true
 set.statuscolumn = "%l %s %r "
 
 -- keymap
-map('i', '{<cr>', '{<cr>}<esc>kA<cr><Tab>', {
+map('i', '{<cr>', '{<cr>}<esc>kA<cr>', {
     noremap = true,
     silent = true,
-    desc = 'Auto-indent and place closing curly brackets upon inserting { and then <cr>'
+    desc = 'Auto-place closing curly brackets and place cursor between brackets upon inserting { and then <cr>'
 }
 )
 
