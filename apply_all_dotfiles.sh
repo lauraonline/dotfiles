@@ -12,6 +12,7 @@ dotfiles=(
     ".config/nvim/lua/plugins/treesitter.lua"
 
     ".config/fontconfig/fonts.conf"
+    ".local/share/fonts/MapleMono"
 
     ".config/lf/lfrc"
 
