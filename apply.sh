@@ -54,4 +54,8 @@ for file in "${dotfiles[@]}"; do
         echo "$destination_path is now symlinked"
     fi
 done
+
+# folders required for certain programs
+mkdir -p "$HOME/.cache/rmpc/"
+
 echo "Dotfiles installed!"
