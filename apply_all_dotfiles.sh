@@ -24,6 +24,8 @@ dotfiles=(
     ".config/waybar/config"
     ".config/waybar/style.css"
 
+    ".local/bin/pi"
+
     ".zshrc"
 
     ".local/share/wayland-sessions/sway.desktop"
