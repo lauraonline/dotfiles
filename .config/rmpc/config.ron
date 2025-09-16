@@ -5,7 +5,8 @@
     address: "127.0.0.1:6600",
     password: None,
     theme: None,
-    cache_dir: None,
+    cache_dir: "$HOME/.cache/rmpc",
+    lyrics_dir: None
     on_song_change: None,
     volume_step: 5,
     max_fps: 30,
@@ -14,7 +15,7 @@
     enable_mouse: true,
     enable_config_hot_reload: true,
     status_update_interval_ms: 1000,
-    rewind_to_start_sec: None,
+    rewind_to_start_sec: 4,
     reflect_changes_to_playlist: false,
     select_current_song_on_change: false,
     browser_song_sort: [Disc, Track, Artist, Title],
