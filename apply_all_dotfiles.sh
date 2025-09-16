@@ -10,6 +10,7 @@ dotfiles=(
     ".config/nvim/lua/plugins/blink.lua"
     ".config/nvim/lua/plugins/nvim_highlight_colors.lua"
     ".config/nvim/lua/plugins/treesitter.lua"
+    ".config/rmpc/config.ron"
 
     ".config/fontconfig/fonts.conf"
     ".local/share/fonts/MapleMono"
@@ -24,8 +25,6 @@ dotfiles=(
     ".config/waybar/style.css"
 
     ".zshrc"
-
-    ".local/bin/pi"
 
     ".local/share/wayland-sessions/sway.desktop"
 
