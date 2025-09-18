@@ -80,6 +80,10 @@ IN INSERT MODE:
     C-t                     | Indent current line
     C-d                     | De-indent current line
     C-r, +                  | Paste from clipboard
+    C-y                     | Accept suggestion
+    C-p                     | Previous suggestion
+    C-n                     | Next suggestion
+    C-e                     | Hide suggestion menu
 COMMANDS:
     :w                      | Write
     :q                      | Quit

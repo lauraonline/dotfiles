@@ -76,7 +76,7 @@
         // }
     },
     "clock": {
-        "format": "{:%a, %y-%m-%d %H:%M}",
+        "format": "{:%a, %d-%m-%y %H:%M}",
     },
     "temperature": {
         // "thermal-zone": 2,
