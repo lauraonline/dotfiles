@@ -6,16 +6,15 @@ return {
         opts = {
             ensure_installed = { 
                 "arduino_language_server",
-                "asm_lsp",
                 "bashls",
                 "clangd",
                 "cssls",
                 "tailwindcss",
-                "csharp_ls",
+                "roslyn",
                 "gopls",
                 "html",
                 "jdtls",
-                "tsserver",
+                "ts_ls",
                 "jsonls",
                 "lua_ls",
                 "kotlin_language_server",
@@ -26,6 +25,10 @@ return {
                 "sqlls",
                 "vimls",
                 "lemminx",
+            },
+            registries = {
+                'github:mason-org/mason-registry',
+                'github:Crashdummyy/mason-registry',
             },
         },
         dependencies = {
