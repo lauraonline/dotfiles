@@ -10,7 +10,6 @@ return {
                 "clangd",
                 "cssls",
                 "tailwindcss",
-                "roslyn",
                 "gopls",
                 "html",
                 "jdtls",
