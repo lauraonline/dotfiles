@@ -13,6 +13,7 @@ ACTIONS
     Super+q             | Kill focused window
     Super+C             | Reload sway config
     Super+E             | Log out
+    Super+Ctrl+L        | Lock screen
 LAYOUT
     Super+b             | Change focused direction to horizontal
     Super+v             | Change focused direction to vertical
