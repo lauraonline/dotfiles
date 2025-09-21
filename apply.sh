@@ -11,7 +11,6 @@ dotfiles=(
     ".config/nvim/lua/plugins/nvim_highlight_colors.lua"
     ".config/nvim/lua/plugins/treesitter.lua"
     ".config/nvim/lua/plugins/mason-lsp.lua"
-    ".config/nvim/lua/plugins/tiny-inline-diagnostic.nvim"
 
     ".config/rmpc/config.ron"
 
