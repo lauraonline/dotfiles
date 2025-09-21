@@ -36,6 +36,8 @@ IN NORMAL MODE:
             j           | Down
         b               | Go to previous start-of-word
         B               | Go to previous start-of-WORD
+        ge              | Go to previous end-of-word
+        gE              | Go to previous end-of-WORD
         w               | Go to next start-of-word
         W               | Go to next start-of-WORD
         e               | Go to next end-of-word
@@ -60,7 +62,8 @@ IN NORMAL MODE:
         "+p             | Paste from clipboard
         x               | Delete at cursor
         dd/Delete       | Delete current line
-        Leader-O       ⚠️| New line under cursor
+        Leader-O      ⚠️| New line under cursor
+        Leader-F      ⚠️| Check diagnostic in current line
     SHORTCUTS
         yiw             | Yank word under cursor
         yaw             | Yank word under cursor naturally (including adjacent space)
@@ -97,6 +100,7 @@ COMMANDS:
                                                4,$ (4 to last), 5,$-1 (5 to penultimate)
     :r [file]               | Append file under current line
     :! command              | Run command in integrated terminal
+    :%s/foo/bar/g           | Find and replace all "foo"s to "bar"s
     :enew                   | New empty buffer
     :e file.txt             | Open file in new buffer
     :bn/:bp                 | Next buffer/previous buffer

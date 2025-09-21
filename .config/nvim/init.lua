@@ -31,3 +31,17 @@ map('n', '<leader>o', 'o<esc>', {
     desc = 'Place a new line under cursor while remaining in normal mode'
 }
 )
+
+map('n', '<leader>f', vim.diagnostic.open_float, {
+    noremap = true,
+    silent = true,
+    desc = "Show diagnostic for current line",
+}
+)
+
+map('n', 'gd', vim.lsp.buf.definition, {
+    noremap = true,
+    silent = true,
+    desc = "Go to declaration of element under cursor"
+}
+)
