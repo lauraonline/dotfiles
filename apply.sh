@@ -14,6 +14,8 @@ dotfiles=(
 
     ".config/rmpc/config.ron"
 
+    ".config/electron-flags.conf"
+
     ".config/fontconfig/fonts.conf"
     ".local/share/fonts/MapleMono"
 
