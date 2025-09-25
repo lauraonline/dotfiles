@@ -12,7 +12,7 @@
         "extrabold": 800
     },
     "line_height": 1.0,
-    "use_hinted": true,
+    "use_hinted": false,
     "ligature": true,
     "feature_freeze": {
         "cv01": "ignore",

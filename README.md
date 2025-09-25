@@ -1,4 +1,4 @@
-Make sure you install the [Maple Mono](https://github.com/subframe7536/maple-font) font and Node.js+npm (for the mason.nvim LSPs).
+Make sure you install the [Maple Mono NF](https://github.com/subframe7536/maple-font) font and Node.js+npm (for the mason.nvim LSPs).
 
 Clone this in your home directory.
 ```bash

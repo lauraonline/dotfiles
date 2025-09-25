@@ -17,7 +17,7 @@ dotfiles=(
     ".config/electron-flags.conf"
 
     ".config/fontconfig/fonts.conf"
-    ".local/share/fonts/MapleMono"
+    ".local/share/fonts/MapleMonoNF"
 
     ".config/lf/lfrc"
 
